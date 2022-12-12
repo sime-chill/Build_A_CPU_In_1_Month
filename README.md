@@ -4,7 +4,7 @@
 # 文件说明
 ## code_22
 在 `SystemVerilog` 框架下实现的 `22` 指令 CPU，可用于**加指令**练习
-## code_simu
+## code_lecture_01
 是 `Lecture 01` 中使用的 CPU 源码，实现 `34` 指令，但**译码级**存在 bug
 ## code_monitor
 正确实现 `34` 指令的 CPU 源码，用于运行监控程序

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Dec 12 20:43:16 2022
+# Process ID: 4476
+# Current directory: D:/my_cpu/_Sun_example_22/xpr/project_1.runs/kernel_code_synth_1
+# Command line: vivado.exe -log kernel_code.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source kernel_code.tcl
+# Log file: D:/my_cpu/_Sun_example_22/xpr/project_1.runs/kernel_code_synth_1/kernel_code.vds
+# Journal file: D:/my_cpu/_Sun_example_22/xpr/project_1.runs/kernel_code_synth_1\vivado.jou
+#-----------------------------------------------------------
+source kernel_code.tcl -notrace

@@ -1,0 +1,64 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.simu_top.u_mycpu.bus_sys_custom0.u_bram_kernel_code.u_kernel_code.inst.native_mem_mapped_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top.simu_top.u_mycpu.bus_sys_custom0.u_bram_user_code.u_user_code.inst.native_mem_mapped_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top.simu_top.u_mycpu.bus_sys_custom0.u_bram_user_data.u_user_data.inst.native_mem_mapped_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top.simu_top.u_mycpu.bus_sys_custom0.u_bram_kernel_data.u_kernel_data.inst.native_mem_mapped_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+==============================================================
+Test begin!
+        [  10000 ns] Test is running, debug_wb_pc = 0x80005ca0
+        [  20000 ns] Test is running, debug_wb_pc = 0x80005e8c
+        [  30000 ns] Test is running, debug_wb_pc = 0x80006078
+        [  40000 ns] Test is running, debug_wb_pc = 0x8000626c
+        [  50000 ns] Test is running, debug_wb_pc = 0x80006458
+        [  60000 ns] Test is running, debug_wb_pc = 0x80006644
+        [  70000 ns] Test is running, debug_wb_pc = 0x8000013c
+        [  80000 ns] Test is running, debug_wb_pc = 0x80000330
+        [  90000 ns] Test is running, debug_wb_pc = 0x8000051c
+        [ 100000 ns] Test is running, debug_wb_pc = 0x80000708
+        [ 110000 ns] Test is running, debug_wb_pc = 0x800008f4
+        [ 120000 ns] Test is running, debug_wb_pc = 0x80000ae8
+        [ 130000 ns] Test is running, debug_wb_pc = 0x80000cd4
+        [ 140000 ns] Test is running, debug_wb_pc = 0x80000ec0
+        [ 150000 ns] Test is running, debug_wb_pc = 0x800010ac
+        [ 160000 ns] Test is running, debug_wb_pc = 0x800012dc
+        [ 170000 ns] Test is running, debug_wb_pc = 0x800015e8
+        [ 180000 ns] Test is running, debug_wb_pc = 0x800018f4
+        [ 190000 ns] Test is running, debug_wb_pc = 0x80001b8c
+        [ 200000 ns] Test is running, debug_wb_pc = 0x80001e28
+        [ 210000 ns] Test is running, debug_wb_pc = 0x80002094
+        [ 220000 ns] Test is running, debug_wb_pc = 0x80002300
+        [ 230000 ns] Test is running, debug_wb_pc = 0x8000259c
+        [ 240000 ns] Test is running, debug_wb_pc = 0x80002830
+        [ 250000 ns] Test is running, debug_wb_pc = 0x80002ad4
+        [ 260000 ns] Test is running, debug_wb_pc = 0x80002da8
+        [ 270000 ns] Test is running, debug_wb_pc = 0x8000302c
+        [ 280000 ns] Test is running, debug_wb_pc = 0x800032a8
+        [ 290000 ns] Test is running, debug_wb_pc = 0x80003520
+        [ 300000 ns] Test is running, debug_wb_pc = 0x80003798
+        [ 310000 ns] Test is running, debug_wb_pc = 0x80003a0c
+        [ 320000 ns] Test is running, debug_wb_pc = 0x80003c58
+        [ 330000 ns] Test is running, debug_wb_pc = 0x80003eac
+        [ 340000 ns] Test is running, debug_wb_pc = 0x80004110
+        [ 350000 ns] Test is running, debug_wb_pc = 0x8000437c
+        [ 360000 ns] Test is running, debug_wb_pc = 0x800045e8
+        [ 370000 ns] Test is running, debug_wb_pc = 0x8000484c
+        [ 380000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 390000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 400000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 410000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 420000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 430000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 440000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 450000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 460000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 470000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 480000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 490000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 500000 ns] Test is running, debug_wb_pc = 0x00000000
+==============================================================
+Test end!
+----PASS!!!
+$finish called at time : 505505 ns : File "D:/my_cpu/simu/tb.sv" Line 160

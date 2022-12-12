@@ -3,7 +3,7 @@
 本项目提供了中山大学电子与信息工程学院**2022年20级**同学期末项目 CPU 设计所需资料
 # 文件说明
 ## code_22
-在 `SystemVerilog` 框架下实现的 `22` 指令 CPU，可用于加指令练习
+在 `SystemVerilog` 框架下实现的 `22` 指令 CPU，可用于**加指令**练习
 ## code_simu
 是 `Lecture 01` 中使用的 CPU 源码，**译码级**存在 bug
 ## code_monitor

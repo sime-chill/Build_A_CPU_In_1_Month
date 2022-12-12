@@ -6,10 +6,10 @@ Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "D:/my_cpu/_Sun_example_22/code/async.sv" Line 14. Module async_transmitter(ClkFrequency=50000000,Baud=9600) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/my_cpu/_Sun_example_22/code/async.sv" Line 192. Module BaudTickGen(ClkFrequency=50000000,Baud=9600) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/my_cpu/_Sun_example_22/code/async.sv" Line 75. Module async_receiver(ClkFrequency=50000000,Baud=9600) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/my_cpu/_Sun_example_22/code/async.sv" Line 192. Module BaudTickGen(ClkFrequency=50000000,Baud=9600,Oversampling=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/_Sun_example/code/async.sv" Line 14. Module async_transmitter(ClkFrequency=50000000,Baud=9600) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/_Sun_example/code/async.sv" Line 192. Module BaudTickGen(ClkFrequency=50000000,Baud=9600) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/_Sun_example/code/async.sv" Line 75. Module async_receiver(ClkFrequency=50000000,Baud=9600) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/_Sun_example/code/async.sv" Line 192. Module BaudTickGen(ClkFrequency=50000000,Baud=9600,Oversampling=8) doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling package xil_defaultlib.mips_abb_pkg
@@ -66,6 +66,6 @@ Compiling module xil_defaultlib.stall
 Compiling module xil_defaultlib.mycpu
 Compiling module xil_defaultlib.thinpad_top
 Compiling module xil_defaultlib.tb_top
-WARNING: [XSIM 43-3373] "D:/my_cpu/simu/tb.sv" Line 66. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+WARNING: [XSIM 43-3373] "D:/_Sun_example/simu/tb.sv" Line 66. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot tb_top_behav

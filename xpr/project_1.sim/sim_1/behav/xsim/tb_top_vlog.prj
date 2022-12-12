@@ -35,7 +35,7 @@ sv xil_defaultlib  --include "../../../../../code" --include "../../../../projec
 "../../../../../code/thinpad_top.sv" \
 "../../../../../code/uart_ctrl.sv" \
 "../../../../../code/uart_sum.sv" \
-"../../../../../../simu/tb.sv" \
+"../../../../../simu/tb.sv" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

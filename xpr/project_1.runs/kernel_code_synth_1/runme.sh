@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/my_cpu/_Sun_example_22/xpr/project_1.runs/kernel_code_synth_1'
+HD_PWD='D:/my_cpu/chap4_simu/xpr/project_1.runs/kernel_code_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

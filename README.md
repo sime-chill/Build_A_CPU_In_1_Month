@@ -40,7 +40,7 @@
 运行监控程序的 Vivado 工程
 ##  xpr_simu
 运行功能测试的 Vivado 工程，`code_22` 与 `code_simu` 均在这个环境运行
-# 启动监控程序
+# 运行监控程序
 在将 `22` 指令 CPU 正确添加至 `34` 指令的基础上，将运行功能测试的 Vivado 工程修改为重新配置成运行监控程序的 Vivado 工程，在 ppt_pdf 中有完整的指南，同时 `xpr_monitor` 中有已经修改好环境的 Vivado 工程，可供参考
 # Problems_In_Disassembly_By_WanZhaoyong
 ## 问题1 

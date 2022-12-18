@@ -1,2 +1,0 @@
-user_code.v,verilog,xil_defaultlib,../../../../project_1.srcs/sources_1/ip/user_code/sim/user_code.v,
-glbl.v,Verilog,xil_defaultlib,glbl.v

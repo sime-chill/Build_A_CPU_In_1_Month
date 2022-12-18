@@ -1,2 +1,0 @@
-kernel_data.v,verilog,xil_defaultlib,../../../../project_1.srcs/sources_1/ip/kernel_data/sim/kernel_data.v,
-glbl.v,Verilog,xil_defaultlib,glbl.v

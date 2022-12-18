@@ -5,10 +5,13 @@
     - [code_22](#code_22)
     - [code_lecture_01](#code_lecture_01)
     - [code_monitor](#code_monitor)
-    - [xpr_simu](#xpr_simu)
-    - [xpr_monitor](#xpr_monitor)
+    - [constraint](#constraint)
     - [doc](#doc)
+    - [kernel](#kernel)
+    - [ppt_pdf](#ppt_pdf)
     - [simu](#simu)
+    - [xpr_monitor](#xpr_monitor)
+    - [xpr_simu](#xpr_simu)
 - [运行监控程序](#运行监控程序)
 - [Problems_In_Disassembly_By_WanZhaoyong](#Problems_In_Disassembly_By_WanZhaoyong)
     - [问题 1](#问题1)
@@ -23,16 +26,22 @@
 是 `Lecture 01` 中使用的 CPU 源码，实现 `34` 指令，但**译码级**存在 bug
 ##  code_monitor
 正确实现 `34` 指令的 CPU 源码，用于运行监控程序
-##  xpr_simu
-运行功能测试的 Vivado 工程，`code_22` 与 `code_simu` 均在这个环境运行
-##  xpr_monitor
-运行监控程序的 Vivado 工程
+##  constraint
+`Digilent Nexys A7` 的约束文件
 ##  doc
-参考资料以及文档
+包含龙芯杯个人赛说明， MIPS 指令集手册， Nexys FPGA 开发板数据手册
+##  kernel
+包含运行监控程序所需的环境
+##  ppt_pdf
+指导性教程和文档
 ##  simu
 仿真用到的一些文件，包括反汇编、加载到 IP 核的 coe 文件、testbench、比对所用的 trace
+##  xpr_monitor
+运行监控程序的 Vivado 工程
+##  xpr_simu
+运行功能测试的 Vivado 工程，`code_22` 与 `code_simu` 均在这个环境运行
 # 启动监控程序
-在将 `22` 指令 CPU 正确添加至 `34` 指令的基础上，将运行功能测试的 Vivado 工程修改为重新配置成运行监控程序的 Vivado 工程，在 ppt 中有完整的指南，同时 `xpr_monitor` 中有已经修改好环境的 Vivado 工程，可供参考
+在将 `22` 指令 CPU 正确添加至 `34` 指令的基础上，将运行功能测试的 Vivado 工程修改为重新配置成运行监控程序的 Vivado 工程，在 ppt_pdf 中有完整的指南，同时 `xpr_monitor` 中有已经修改好环境的 Vivado 工程，可供参考
 # Problems_In_Disassembly_By_WanZhaoyong
 ## 问题1 
 **在反编译文件 lab3.s 中，我们会注意到一些指令例如 `B, li` ，这些指令并未出现在官方文档里的 34 指令列表里，那么他们是什么指令呢？**<br>

@@ -9,6 +9,7 @@
     - [xpr_monitor](#xpr_monitor)
     - [doc](#doc)
     - [simu](#simu)
+- [运行监控程序](#运行监控程序)
 - [Problems_In_Disassembly_By_WanZhaoyong](#Problems_In_Disassembly_By_WanZhaoyong)
     - [问题 1](#问题1)
     - [问题 2](#问题2)
@@ -30,6 +31,8 @@
 参考资料以及文档
 ##  simu
 仿真用到的一些文件，包括反汇编、加载到 IP 核的 coe 文件、testbench、比对所用的 trace
+# 启动监控程序
+在将 `22` 指令 CPU 正确添加至 `34` 指令的基础上，将运行功能测试的 Vivado 工程修改为重新配置成运行监控程序的 Vivado 工程，在 ppt 中有完整的指南，同时 `xpr_monitor` 中有已经修改好环境的 Vivado 工程，可供参考
 # Problems_In_Disassembly_By_WanZhaoyong
 ## 问题1 
 **在反编译文件 lab3.s 中，我们会注意到一些指令例如 `B, li` ，这些指令并未出现在官方文档里的 34 指令列表里，那么他们是什么指令呢？**<br>

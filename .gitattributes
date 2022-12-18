@@ -1,1 +1,4 @@
 kernel filter=lfs diff=lfs merge=lfs -text
+kernel/windows_env_v0.01/toolchain/libexec/gcc/mips-mti-elf/4.9.2/lto1.exe filter=lfs diff=lfs merge=lfs -text
+kernel/windows_env_v0.01/toolchain/libexec/gcc/mips-mti-elf/4.9.2/cc1.exe filter=lfs diff=lfs merge=lfs -text
+kernel/windows_env_v0.01/toolchain/libexec/gcc/mips-mti-elf/4.9.2/cc1plus.exe filter=lfs diff=lfs merge=lfs -text

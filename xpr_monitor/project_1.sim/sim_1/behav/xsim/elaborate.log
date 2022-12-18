@@ -1,0 +1,71 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 12ad87d3d76a4f19b0e3ed6702dc72b7 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/_Sun_example/code/async.sv" Line 14. Module async_transmitter(ClkFrequency=50000000,Baud=9600) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/_Sun_example/code/async.sv" Line 192. Module BaudTickGen(ClkFrequency=50000000,Baud=9600) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/_Sun_example/code/async.sv" Line 75. Module async_receiver(ClkFrequency=50000000,Baud=9600) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/_Sun_example/code/async.sv" Line 192. Module BaudTickGen(ClkFrequency=50000000,Baud=9600,Oversampling=8) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.mips_abb_pkg
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.pll_example_clk_wiz
+Compiling module xil_defaultlib.pll_example
+Compiling module xil_defaultlib.bus_cpu_bram
+Compiling module xil_defaultlib.bus_mux_custom
+Compiling module xil_defaultlib.bus_addr_dec_custom
+Compiling module xil_defaultlib.bus_arbiter_custom
+Compiling module xil_defaultlib.bus_slave_mux_custom
+Compiling module xil_defaultlib.bus_sum_custom
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.kernel_code
+Compiling module xil_defaultlib.bram_kernel_code
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.user_code
+Compiling module xil_defaultlib.bram_user_code
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.user_data
+Compiling module xil_defaultlib.bram_user_data
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.kernel_data
+Compiling module xil_defaultlib.bram_kernel_data
+Compiling module xil_defaultlib.uart_ctrl
+Compiling module xil_defaultlib.BaudTickGen(ClkFrequency=5000000...
+Compiling module xil_defaultlib.async_transmitter(ClkFrequency=5...
+Compiling module xil_defaultlib.BaudTickGen(ClkFrequency=5000000...
+Compiling module xil_defaultlib.async_receiver(ClkFrequency=5000...
+Compiling module xil_defaultlib.uart_sum
+Compiling module xil_defaultlib.bus_top
+Compiling module xil_defaultlib.stage_if
+Compiling module xil_defaultlib.ifid
+Compiling module xil_defaultlib.stage_id
+Compiling module xil_defaultlib.idexe
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.stage_exe
+Compiling module xil_defaultlib.exemem
+Compiling module xil_defaultlib.stage_mem
+Compiling module xil_defaultlib.memwb
+Compiling module xil_defaultlib.stall
+Compiling module xil_defaultlib.mycpu
+Compiling module xil_defaultlib.thinpad_top
+Compiling module xil_defaultlib.tb_top
+WARNING: [XSIM 43-3373] "D:/_Sun_example/simu/tb.sv" Line 66. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav

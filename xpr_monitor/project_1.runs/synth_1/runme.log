@@ -1,0 +1,952 @@
+
+*** Running vivado
+    with args -log thinpad_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source thinpad_top.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source thinpad_top.tcl -notrace
+Command: synth_design -top thinpad_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6072 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 997.410 ; gain = 240.848
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'thinpad_top' [D:/my_cpu/_Build_CPU/code_monitor/thinpad_top.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'pll_example' [D:/my_cpu/_Build_CPU/xpr_monitor/project_1.runs/synth_1/.Xil/Vivado-10292-DESKTOP-NanGuo/realtime/pll_example_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'pll_example' (1#1) [D:/my_cpu/_Build_CPU/xpr_monitor/project_1.runs/synth_1/.Xil/Vivado-10292-DESKTOP-NanGuo/realtime/pll_example_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mycpu' [D:/my_cpu/_Build_CPU/code_monitor/mips_top.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'bus_top' [D:/my_cpu/_Build_CPU/code_monitor/bus_top.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'bus_cpu_bram' [D:/my_cpu/_Build_CPU/code_monitor/bus_cpu_bram.sv:3]
+	Parameter IDLE bound to: 2'b00 
+	Parameter REQ bound to: 2'b01 
+	Parameter BUSY bound to: 2'b10 
+	Parameter STALL bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'bus_cpu_bram' (2#1) [D:/my_cpu/_Build_CPU/code_monitor/bus_cpu_bram.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'bus_sum_custom' [D:/my_cpu/_Build_CPU/code_monitor/bus_sum_custom.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'bus_mux_custom' [D:/my_cpu/_Build_CPU/code_monitor/bus_mux_custom.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'bus_mux_custom' (3#1) [D:/my_cpu/_Build_CPU/code_monitor/bus_mux_custom.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'bus_addr_dec_custom' [D:/my_cpu/_Build_CPU/code_monitor/bus_addr_dec_custom.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'bus_addr_dec_custom' (4#1) [D:/my_cpu/_Build_CPU/code_monitor/bus_addr_dec_custom.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'bus_arbiter_custom' [D:/my_cpu/_Build_CPU/code_monitor/bus_arbiter_custom.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'bus_arbiter_custom' (5#1) [D:/my_cpu/_Build_CPU/code_monitor/bus_arbiter_custom.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'bus_slave_mux_custom' [D:/my_cpu/_Build_CPU/code_monitor/bus_slave_mux_custom.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'bus_slave_mux_custom' (6#1) [D:/my_cpu/_Build_CPU/code_monitor/bus_slave_mux_custom.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'bus_sum_custom' (7#1) [D:/my_cpu/_Build_CPU/code_monitor/bus_sum_custom.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'bram_kernel_code' [D:/my_cpu/_Build_CPU/code_monitor/bram_kernel_code.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'kernel_code' [D:/my_cpu/_Build_CPU/xpr_monitor/project_1.runs/synth_1/.Xil/Vivado-10292-DESKTOP-NanGuo/realtime/kernel_code_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kernel_code' (8#1) [D:/my_cpu/_Build_CPU/xpr_monitor/project_1.runs/synth_1/.Xil/Vivado-10292-DESKTOP-NanGuo/realtime/kernel_code_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bram_kernel_code' (9#1) [D:/my_cpu/_Build_CPU/code_monitor/bram_kernel_code.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'bram_user_code' [D:/my_cpu/_Build_CPU/code_monitor/bram_user_code.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'user_code' [D:/my_cpu/_Build_CPU/xpr_monitor/project_1.runs/synth_1/.Xil/Vivado-10292-DESKTOP-NanGuo/realtime/user_code_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_code' (10#1) [D:/my_cpu/_Build_CPU/xpr_monitor/project_1.runs/synth_1/.Xil/Vivado-10292-DESKTOP-NanGuo/realtime/user_code_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bram_user_code' (11#1) [D:/my_cpu/_Build_CPU/code_monitor/bram_user_code.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'bram_user_data' [D:/my_cpu/_Build_CPU/code_monitor/bram_user_data.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'user_data' [D:/my_cpu/_Build_CPU/xpr_monitor/project_1.runs/synth_1/.Xil/Vivado-10292-DESKTOP-NanGuo/realtime/user_data_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'user_data' (12#1) [D:/my_cpu/_Build_CPU/xpr_monitor/project_1.runs/synth_1/.Xil/Vivado-10292-DESKTOP-NanGuo/realtime/user_data_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bram_user_data' (13#1) [D:/my_cpu/_Build_CPU/code_monitor/bram_user_data.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'bram_kernel_data' [D:/my_cpu/_Build_CPU/code_monitor/bram_kernel_data.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'kernel_data' [D:/my_cpu/_Build_CPU/xpr_monitor/project_1.runs/synth_1/.Xil/Vivado-10292-DESKTOP-NanGuo/realtime/kernel_data_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kernel_data' (14#1) [D:/my_cpu/_Build_CPU/xpr_monitor/project_1.runs/synth_1/.Xil/Vivado-10292-DESKTOP-NanGuo/realtime/kernel_data_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bram_kernel_data' (15#1) [D:/my_cpu/_Build_CPU/code_monitor/bram_kernel_data.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'uart_sum' [D:/my_cpu/_Build_CPU/code_monitor/uart_sum.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'uart_ctrl' [D:/my_cpu/_Build_CPU/code_monitor/uart_ctrl.sv:5]
+INFO: [Synth 8-4471] merging register 'tx_start_reg' into 'ready_wr_reg_reg' [D:/my_cpu/_Build_CPU/code_monitor/uart_ctrl.sv:38]
+INFO: [Synth 8-4471] merging register 'rx_clear_reg' into 'ready_rd_reg_reg' [D:/my_cpu/_Build_CPU/code_monitor/uart_ctrl.sv:40]
+WARNING: [Synth 8-6014] Unused sequential element tx_start_reg was removed.  [D:/my_cpu/_Build_CPU/code_monitor/uart_ctrl.sv:38]
+WARNING: [Synth 8-6014] Unused sequential element rx_clear_reg was removed.  [D:/my_cpu/_Build_CPU/code_monitor/uart_ctrl.sv:40]
+INFO: [Synth 8-6155] done synthesizing module 'uart_ctrl' (16#1) [D:/my_cpu/_Build_CPU/code_monitor/uart_ctrl.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'async_transmitter' [D:/my_cpu/_Build_CPU/code_monitor/async.sv:14]
+	Parameter ClkFrequency bound to: 50000000 - type: integer 
+	Parameter Baud bound to: 9600 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'BaudTickGen' [D:/my_cpu/_Build_CPU/code_monitor/async.sv:192]
+	Parameter ClkFrequency bound to: 50000000 - type: integer 
+	Parameter Baud bound to: 9600 - type: integer 
+	Parameter Oversampling bound to: 1 - type: integer 
+	Parameter AccWidth bound to: 21 - type: integer 
+	Parameter ShiftLimiter bound to: 4 - type: integer 
+	Parameter Inc bound to: 403 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'BaudTickGen' (17#1) [D:/my_cpu/_Build_CPU/code_monitor/async.sv:192]
+INFO: [Synth 8-6155] done synthesizing module 'async_transmitter' (18#1) [D:/my_cpu/_Build_CPU/code_monitor/async.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'async_receiver' [D:/my_cpu/_Build_CPU/code_monitor/async.sv:75]
+	Parameter ClkFrequency bound to: 50000000 - type: integer 
+	Parameter Baud bound to: 9600 - type: integer 
+	Parameter Oversampling bound to: 8 - type: integer 
+	Parameter l2o bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'BaudTickGen__parameterized0' [D:/my_cpu/_Build_CPU/code_monitor/async.sv:192]
+	Parameter ClkFrequency bound to: 50000000 - type: integer 
+	Parameter Baud bound to: 9600 - type: integer 
+	Parameter Oversampling bound to: 8 - type: integer 
+	Parameter AccWidth bound to: 21 - type: integer 
+	Parameter ShiftLimiter bound to: 7 - type: integer 
+	Parameter Inc bound to: 3221 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'BaudTickGen__parameterized0' (18#1) [D:/my_cpu/_Build_CPU/code_monitor/async.sv:192]
+WARNING: [Synth 8-6014] Unused sequential element GapCnt_reg was removed.  [D:/my_cpu/_Build_CPU/code_monitor/async.sv:180]
+WARNING: [Synth 8-6014] Unused sequential element RxD_endofpacket_reg was removed.  [D:/my_cpu/_Build_CPU/code_monitor/async.sv:183]
+INFO: [Synth 8-6155] done synthesizing module 'async_receiver' (19#1) [D:/my_cpu/_Build_CPU/code_monitor/async.sv:75]
+INFO: [Synth 8-6155] done synthesizing module 'uart_sum' (20#1) [D:/my_cpu/_Build_CPU/code_monitor/uart_sum.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'bus_top' (21#1) [D:/my_cpu/_Build_CPU/code_monitor/bus_top.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'stage_if' [D:/my_cpu/_Build_CPU/code_monitor/stage_if.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'stage_if' (22#1) [D:/my_cpu/_Build_CPU/code_monitor/stage_if.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'ifid' [D:/my_cpu/_Build_CPU/code_monitor/reg_ifid.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'ifid' (23#1) [D:/my_cpu/_Build_CPU/code_monitor/reg_ifid.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'stage_id' [D:/my_cpu/_Build_CPU/code_monitor/stage_id.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'stage_id' (24#1) [D:/my_cpu/_Build_CPU/code_monitor/stage_id.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'idexe' [D:/my_cpu/_Build_CPU/code_monitor/reg_idexe.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'idexe' (25#1) [D:/my_cpu/_Build_CPU/code_monitor/reg_idexe.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [D:/my_cpu/_Build_CPU/code_monitor/regfile.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (26#1) [D:/my_cpu/_Build_CPU/code_monitor/regfile.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'stage_exe' [D:/my_cpu/_Build_CPU/code_monitor/stage_exe.sv:3]
+INFO: [Synth 8-226] default block is never used [D:/my_cpu/_Build_CPU/code_monitor/stage_exe.sv:45]
+INFO: [Synth 8-226] default block is never used [D:/my_cpu/_Build_CPU/code_monitor/stage_exe.sv:52]
+INFO: [Synth 8-6155] done synthesizing module 'stage_exe' (27#1) [D:/my_cpu/_Build_CPU/code_monitor/stage_exe.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'exemem' [D:/my_cpu/_Build_CPU/code_monitor/reg_exemem.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'exemem' (28#1) [D:/my_cpu/_Build_CPU/code_monitor/reg_exemem.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'stage_mem' [D:/my_cpu/_Build_CPU/code_monitor/stage_mem.sv:3]
+INFO: [Synth 8-226] default block is never used [D:/my_cpu/_Build_CPU/code_monitor/stage_mem.sv:46]
+INFO: [Synth 8-226] default block is never used [D:/my_cpu/_Build_CPU/code_monitor/stage_mem.sv:87]
+INFO: [Synth 8-6155] done synthesizing module 'stage_mem' (29#1) [D:/my_cpu/_Build_CPU/code_monitor/stage_mem.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'memwb' [D:/my_cpu/_Build_CPU/code_monitor/reg_memwb.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'memwb' (30#1) [D:/my_cpu/_Build_CPU/code_monitor/reg_memwb.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'stall' [D:/my_cpu/_Build_CPU/code_monitor/stall.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'stall' (31#1) [D:/my_cpu/_Build_CPU/code_monitor/stall.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'mycpu' (32#1) [D:/my_cpu/_Build_CPU/code_monitor/mips_top.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'thinpad_top' (33#1) [D:/my_cpu/_Build_CPU/code_monitor/thinpad_top.sv:1]
+WARNING: [Synth 8-3331] design memwb has unconnected port stop[3]
+WARNING: [Synth 8-3331] design memwb has unconnected port stop[2]
+WARNING: [Synth 8-3331] design memwb has unconnected port stop[1]
+WARNING: [Synth 8-3331] design memwb has unconnected port stop[0]
+WARNING: [Synth 8-3331] design exemem has unconnected port stop[5]
+WARNING: [Synth 8-3331] design exemem has unconnected port stop[2]
+WARNING: [Synth 8-3331] design exemem has unconnected port stop[1]
+WARNING: [Synth 8-3331] design exemem has unconnected port stop[0]
+WARNING: [Synth 8-3331] design stage_exe has unconnected port exe_i_aluop[sign]
+WARNING: [Synth 8-3331] design idexe has unconnected port stop[5]
+WARNING: [Synth 8-3331] design idexe has unconnected port stop[4]
+WARNING: [Synth 8-3331] design idexe has unconnected port stop[1]
+WARNING: [Synth 8-3331] design idexe has unconnected port stop[0]
+WARNING: [Synth 8-3331] design ifid has unconnected port stop[5]
+WARNING: [Synth 8-3331] design ifid has unconnected port stop[4]
+WARNING: [Synth 8-3331] design ifid has unconnected port stop[3]
+WARNING: [Synth 8-3331] design ifid has unconnected port stop[0]
+WARNING: [Synth 8-3331] design stage_if has unconnected port stop[5]
+WARNING: [Synth 8-3331] design stage_if has unconnected port stop[4]
+WARNING: [Synth 8-3331] design stage_if has unconnected port stop[3]
+WARNING: [Synth 8-3331] design stage_if has unconnected port stop[2]
+WARNING: [Synth 8-3331] design stage_if has unconnected port stop[1]
+WARNING: [Synth 8-3331] design uart_ctrl has unconnected port wr_data[31]
+WARNING: [Synth 8-3331] design uart_ctrl has unconnected port wr_data[30]
+WARNING: [Synth 8-3331] design uart_ctrl has unconnected port wr_data[29]
+WARNING: [Synth 8-3331] design uart_ctrl has unconnected port wr_data[28]
+WARNING: [Synth 8-3331] design uart_ctrl has unconnected port wr_data[27]
+WARNING: [Synth 8-3331] design uart_ctrl has unconnected port wr_data[26]
+WARNING: [Synth 8-3331] design uart_ctrl has unconnected port wr_data[25]
+WARNING: [Synth 8-3331] design uart_ctrl has unconnected port wr_data[24]
+WARNING: [Synth 8-3331] design uart_ctrl has unconnected port wr_data[23]
+WARNING: [Synth 8-3331] design uart_ctrl has unconnected port wr_data[22]
+WARNING: [Synth 8-3331] design uart_ctrl has unconnected port wr_data[21]
+WARNING: [Synth 8-3331] design uart_ctrl has unconnected port wr_data[20]
+WARNING: [Synth 8-3331] design uart_ctrl has unconnected port wr_data[19]
+WARNING: [Synth 8-3331] design uart_ctrl has unconnected port wr_data[18]
+WARNING: [Synth 8-3331] design uart_ctrl has unconnected port wr_data[17]
+WARNING: [Synth 8-3331] design uart_ctrl has unconnected port wr_data[16]
+WARNING: [Synth 8-3331] design uart_ctrl has unconnected port wr_data[15]
+WARNING: [Synth 8-3331] design uart_ctrl has unconnected port wr_data[14]
+WARNING: [Synth 8-3331] design uart_ctrl has unconnected port wr_data[13]
+WARNING: [Synth 8-3331] design uart_ctrl has unconnected port wr_data[12]
+WARNING: [Synth 8-3331] design uart_ctrl has unconnected port wr_data[11]
+WARNING: [Synth 8-3331] design uart_ctrl has unconnected port wr_data[10]
+WARNING: [Synth 8-3331] design uart_ctrl has unconnected port wr_data[9]
+WARNING: [Synth 8-3331] design uart_ctrl has unconnected port wr_data[8]
+WARNING: [Synth 8-3331] design bram_kernel_data has unconnected port addr[31]
+WARNING: [Synth 8-3331] design bram_kernel_data has unconnected port addr[30]
+WARNING: [Synth 8-3331] design bram_kernel_data has unconnected port addr[29]
+WARNING: [Synth 8-3331] design bram_kernel_data has unconnected port addr[28]
+WARNING: [Synth 8-3331] design bram_kernel_data has unconnected port addr[27]
+WARNING: [Synth 8-3331] design bram_kernel_data has unconnected port addr[26]
+WARNING: [Synth 8-3331] design bram_kernel_data has unconnected port addr[25]
+WARNING: [Synth 8-3331] design bram_kernel_data has unconnected port addr[24]
+WARNING: [Synth 8-3331] design bram_kernel_data has unconnected port addr[23]
+WARNING: [Synth 8-3331] design bram_kernel_data has unconnected port addr[22]
+WARNING: [Synth 8-3331] design bram_kernel_data has unconnected port addr[21]
+WARNING: [Synth 8-3331] design bram_kernel_data has unconnected port addr[20]
+WARNING: [Synth 8-3331] design bram_kernel_data has unconnected port addr[19]
+WARNING: [Synth 8-3331] design bram_kernel_data has unconnected port addr[18]
+WARNING: [Synth 8-3331] design bram_kernel_data has unconnected port addr[17]
+WARNING: [Synth 8-3331] design bram_kernel_data has unconnected port addr[16]
+WARNING: [Synth 8-3331] design bram_kernel_data has unconnected port addr[1]
+WARNING: [Synth 8-3331] design bram_kernel_data has unconnected port addr[0]
+WARNING: [Synth 8-3331] design bram_user_data has unconnected port addr[31]
+WARNING: [Synth 8-3331] design bram_user_data has unconnected port addr[30]
+WARNING: [Synth 8-3331] design bram_user_data has unconnected port addr[29]
+WARNING: [Synth 8-3331] design bram_user_data has unconnected port addr[28]
+WARNING: [Synth 8-3331] design bram_user_data has unconnected port addr[27]
+WARNING: [Synth 8-3331] design bram_user_data has unconnected port addr[26]
+WARNING: [Synth 8-3331] design bram_user_data has unconnected port addr[25]
+WARNING: [Synth 8-3331] design bram_user_data has unconnected port addr[24]
+WARNING: [Synth 8-3331] design bram_user_data has unconnected port addr[23]
+WARNING: [Synth 8-3331] design bram_user_data has unconnected port addr[22]
+WARNING: [Synth 8-3331] design bram_user_data has unconnected port addr[21]
+WARNING: [Synth 8-3331] design bram_user_data has unconnected port addr[20]
+WARNING: [Synth 8-3331] design bram_user_data has unconnected port addr[19]
+WARNING: [Synth 8-3331] design bram_user_data has unconnected port addr[18]
+WARNING: [Synth 8-3331] design bram_user_data has unconnected port addr[17]
+WARNING: [Synth 8-3331] design bram_user_data has unconnected port addr[16]
+WARNING: [Synth 8-3331] design bram_user_data has unconnected port addr[1]
+WARNING: [Synth 8-3331] design bram_user_data has unconnected port addr[0]
+WARNING: [Synth 8-3331] design bram_user_code has unconnected port addr[31]
+WARNING: [Synth 8-3331] design bram_user_code has unconnected port addr[30]
+WARNING: [Synth 8-3331] design bram_user_code has unconnected port addr[29]
+WARNING: [Synth 8-3331] design bram_user_code has unconnected port addr[28]
+WARNING: [Synth 8-3331] design bram_user_code has unconnected port addr[27]
+WARNING: [Synth 8-3331] design bram_user_code has unconnected port addr[26]
+WARNING: [Synth 8-3331] design bram_user_code has unconnected port addr[25]
+WARNING: [Synth 8-3331] design bram_user_code has unconnected port addr[24]
+WARNING: [Synth 8-3331] design bram_user_code has unconnected port addr[23]
+WARNING: [Synth 8-3331] design bram_user_code has unconnected port addr[22]
+WARNING: [Synth 8-3331] design bram_user_code has unconnected port addr[21]
+WARNING: [Synth 8-3331] design bram_user_code has unconnected port addr[20]
+WARNING: [Synth 8-3331] design bram_user_code has unconnected port addr[19]
+WARNING: [Synth 8-3331] design bram_user_code has unconnected port addr[18]
+WARNING: [Synth 8-3331] design bram_user_code has unconnected port addr[17]
+WARNING: [Synth 8-3331] design bram_user_code has unconnected port addr[16]
+WARNING: [Synth 8-3331] design bram_user_code has unconnected port addr[1]
+WARNING: [Synth 8-3331] design bram_user_code has unconnected port addr[0]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1074.387 ; gain = 317.824
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1074.387 ; gain = 317.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1074.387 ; gain = 317.824
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.099 . Memory (MB): peak = 1074.387 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/my_cpu/_Build_CPU/xpr_monitor/project_1.srcs/sources_1/ip/kernel_code/kernel_code/kernel_code_in_context.xdc] for cell 'u_mycpu/bus_sys_custom0/u_bram_kernel_code/u_kernel_code'
+Finished Parsing XDC File [d:/my_cpu/_Build_CPU/xpr_monitor/project_1.srcs/sources_1/ip/kernel_code/kernel_code/kernel_code_in_context.xdc] for cell 'u_mycpu/bus_sys_custom0/u_bram_kernel_code/u_kernel_code'
+Parsing XDC File [d:/my_cpu/_Build_CPU/xpr_monitor/project_1.srcs/sources_1/ip/user_data/user_data/user_data_in_context.xdc] for cell 'u_mycpu/bus_sys_custom0/u_bram_user_data/u_user_data'
+Finished Parsing XDC File [d:/my_cpu/_Build_CPU/xpr_monitor/project_1.srcs/sources_1/ip/user_data/user_data/user_data_in_context.xdc] for cell 'u_mycpu/bus_sys_custom0/u_bram_user_data/u_user_data'
+Parsing XDC File [d:/my_cpu/_Build_CPU/xpr_monitor/project_1.srcs/sources_1/ip/user_code/user_code/user_data_in_context.xdc] for cell 'u_mycpu/bus_sys_custom0/u_bram_user_code/u_user_code'
+Finished Parsing XDC File [d:/my_cpu/_Build_CPU/xpr_monitor/project_1.srcs/sources_1/ip/user_code/user_code/user_data_in_context.xdc] for cell 'u_mycpu/bus_sys_custom0/u_bram_user_code/u_user_code'
+Parsing XDC File [d:/my_cpu/_Build_CPU/xpr_monitor/project_1.srcs/sources_1/ip/kernel_data/kernel_data/kernel_data_in_context.xdc] for cell 'u_mycpu/bus_sys_custom0/u_bram_kernel_data/u_kernel_data'
+Finished Parsing XDC File [d:/my_cpu/_Build_CPU/xpr_monitor/project_1.srcs/sources_1/ip/kernel_data/kernel_data/kernel_data_in_context.xdc] for cell 'u_mycpu/bus_sys_custom0/u_bram_kernel_data/u_kernel_data'
+Parsing XDC File [d:/my_cpu/_Build_CPU/xpr_monitor/project_1.srcs/sources_1/ip/pll_example/pll_example/pll_example_in_context.xdc] for cell 'clock_gen'
+Finished Parsing XDC File [d:/my_cpu/_Build_CPU/xpr_monitor/project_1.srcs/sources_1/ip/pll_example/pll_example/pll_example_in_context.xdc] for cell 'clock_gen'
+Parsing XDC File [D:/my_cpu/_Build_CPU/constraint/nexys_pin.xdc]
+Finished Parsing XDC File [D:/my_cpu/_Build_CPU/constraint/nexys_pin.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/my_cpu/_Build_CPU/constraint/nexys_pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/thinpad_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/thinpad_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/my_cpu/_Build_CPU/xpr_monitor/project_1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/my_cpu/_Build_CPU/xpr_monitor/project_1.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1198.148 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1198.148 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1198.148 ; gain = 441.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1198.148 ; gain = 441.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100M. (constraint file  d:/my_cpu/_Build_CPU/xpr_monitor/project_1.srcs/sources_1/ip/pll_example/pll_example/pll_example_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100M. (constraint file  d:/my_cpu/_Build_CPU/xpr_monitor/project_1.srcs/sources_1/ip/pll_example/pll_example/pll_example_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for u_mycpu/bus_sys_custom0/u_bram_kernel_code/u_kernel_code. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_mycpu/bus_sys_custom0/u_bram_user_data/u_user_data. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_mycpu/bus_sys_custom0/u_bram_user_code/u_user_code. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_mycpu/bus_sys_custom0/u_bram_kernel_data/u_kernel_data. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clock_gen. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1198.148 ; gain = 441.586
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'bus_cpu_bram'
+INFO: [Synth 8-802] inferred FSM for state register 'owner_reg' in module 'bus_arbiter_custom'
+INFO: [Synth 8-802] inferred FSM for state register 'TxD_state_reg' in module 'async_transmitter'
+INFO: [Synth 8-802] inferred FSM for state register 'RxD_state_reg' in module 'async_receiver'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/my_cpu/_Build_CPU/code_monitor/stage_exe.sv:45]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                     REQ |                               01 |                               01
+                    BUSY |                               10 |                               10
+                   STALL |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'bus_cpu_bram'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                              001 |                               00
+                  iSTATE |                              010 |                               10
+                 iSTATE1 |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'owner_reg' using encoding 'one-hot' in module 'bus_arbiter_custom'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE5 |                      00000000001 |                             0000
+                  iSTATE |                      00000000010 |                             0100
+                 iSTATE7 |                      00000000100 |                             1000
+                 iSTATE6 |                      00000001000 |                             1001
+                 iSTATE4 |                      00000010000 |                             1010
+                 iSTATE2 |                      00000100000 |                             1011
+                 iSTATE3 |                      00001000000 |                             1100
+                 iSTATE0 |                      00010000000 |                             1101
+                 iSTATE9 |                      00100000000 |                             1110
+                 iSTATE8 |                      01000000000 |                             1111
+                 iSTATE1 |                      10000000000 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'TxD_state_reg' using encoding 'one-hot' in module 'async_transmitter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE5 |                      00000000001 |                             0000
+                 iSTATE4 |                      00000000010 |                             0001
+                 iSTATE7 |                      00000000100 |                             1000
+                 iSTATE6 |                      00000001000 |                             1001
+                 iSTATE3 |                      00000010000 |                             1010
+                 iSTATE1 |                      00000100000 |                             1011
+                 iSTATE2 |                      00001000000 |                             1100
+                  iSTATE |                      00010000000 |                             1101
+                 iSTATE9 |                      00100000000 |                             1110
+                 iSTATE8 |                      01000000000 |                             1111
+                 iSTATE0 |                      10000000000 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'RxD_state_reg' using encoding 'one-hot' in module 'async_receiver'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1198.148 ; gain = 441.586
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     22 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 54    
+	               22 Bit    Registers := 2     
+	                8 Bit    Registers := 4     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 27    
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 40    
+	   4 Input     32 Bit        Muxes := 15    
+	   3 Input     32 Bit        Muxes := 1     
+	  11 Input     11 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 7     
+	  11 Input      4 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   5 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 3     
+	   5 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 55    
+	   4 Input      1 Bit        Muxes := 22    
+	   6 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module thinpad_top 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module bus_cpu_bram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 7     
+Module bus_mux_custom 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module bus_addr_dec_custom 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module bus_arbiter_custom 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+Module bram_kernel_code 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+Module bram_user_code 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+Module bram_user_data 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+Module bram_kernel_data 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+Module uart_ctrl 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module BaudTickGen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 1     
++---Registers : 
+	               22 Bit    Registers := 1     
+Module async_transmitter 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	  11 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module BaudTickGen__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 1     
++---Registers : 
+	               22 Bit    Registers := 1     
+Module async_receiver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  11 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	  11 Input      1 Bit        Muxes := 1     
+Module stage_if 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ifid 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module stage_id 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 10    
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module idexe 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module regfile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 32    
+Module stage_exe 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 4     
+	   2 Input     32 Bit        Muxes := 1     
+Module exemem 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module stage_mem 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 4     
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 3     
+Module memwb 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module stall 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/my_cpu/_Build_CPU/code_monitor/stage_exe.sv:43]
+DSP Report: Generating DSP artres1, operation Mode is: A*B.
+DSP Report: operator artres1 is absorbed into DSP artres1.
+DSP Report: operator artres1 is absorbed into DSP artres1.
+DSP Report: Generating DSP artres1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator artres1 is absorbed into DSP artres1.
+DSP Report: operator artres1 is absorbed into DSP artres1.
+DSP Report: Generating DSP artres1, operation Mode is: A*B.
+DSP Report: operator artres1 is absorbed into DSP artres1.
+DSP Report: operator artres1 is absorbed into DSP artres1.
+DSP Report: Generating DSP artres1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator artres1 is absorbed into DSP artres1.
+DSP Report: operator artres1 is absorbed into DSP artres1.
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[3]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[4]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[5]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[6]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[7]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[8]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[9]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[10]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[11]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[12]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[13]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[14]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[15]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[16]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[17]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[18]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[19]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[20]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[21]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[22]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[23]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[24]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[25]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[26]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[27]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[28]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[29]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[30]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[31]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_sel_reg[0]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_sel_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_sel_reg[1]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_sel_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_sel_reg[2]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_sel_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[2]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[8]' (FDR) to 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[9]' (FDR) to 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[10]' (FDR) to 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[11]' (FDR) to 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[12]' (FDR) to 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[13]' (FDR) to 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[14]' (FDR) to 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[16]' (FDR) to 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[17]' (FDR) to 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[18]' (FDR) to 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[19]' (FDR) to 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[20]' (FDR) to 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[21]' (FDR) to 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[22]' (FDR) to 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[24]' (FDR) to 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[25]' (FDR) to 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[26]' (FDR) to 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[27]' (FDR) to 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[28]' (FDR) to 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[29]' (FDR) to 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[30]' (FDR) to 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[15]' (FDR) to 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[23]' (FDR) to 'u_mycpu/bus_sys_custom0/uart_sum0/uart_ctrl0/rd_data_reg_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_mycpu/bus_sys_custom0/\uart_sum0/uart_ctrl0/rd_data_reg_reg[31] )
+INFO: [Synth 8-3886] merging instance 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[1]' (FDRE) to 'u_mycpu/bus_sys_custom0/bus_inst/bus_wr_data_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_mycpu/bus_sys_custom0/\bus_inst/bus_wr_data_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_mycpu/bus_sys_custom0/\bus_inst/bus_we_reg )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1198.148 ; gain = 441.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|stage_exe   | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|stage_exe   | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|stage_exe   | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|stage_exe   | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1200.246 ; gain = 443.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 1368.168 ; gain = 611.605
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_mycpu/u_regfile/regs_reg[0][0] )
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 1369.195 ; gain = 612.633
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:12 ; elapsed = 00:01:13 . Memory (MB): peak = 1369.195 ; gain = 612.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:12 ; elapsed = 00:01:13 . Memory (MB): peak = 1369.195 ; gain = 612.633
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:13 ; elapsed = 00:01:14 . Memory (MB): peak = 1369.195 ; gain = 612.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:13 ; elapsed = 00:01:14 . Memory (MB): peak = 1369.195 ; gain = 612.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:13 ; elapsed = 00:01:14 . Memory (MB): peak = 1369.195 ; gain = 612.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:13 ; elapsed = 00:01:14 . Memory (MB): peak = 1369.195 ; gain = 612.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |pll_example   |         1|
+|2     |kernel_code   |         1|
+|3     |kernel_data   |         1|
+|4     |user_code     |         1|
+|5     |user_data     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |kernel_code |     1|
+|2     |kernel_data |     1|
+|3     |pll_example |     1|
+|4     |user_code   |     1|
+|5     |user_data   |     1|
+|6     |CARRY4      |    70|
+|7     |DSP48E1_1   |     3|
+|8     |LUT1        |    56|
+|9     |LUT2        |   168|
+|10    |LUT3        |   169|
+|11    |LUT4        |   169|
+|12    |LUT5        |   394|
+|13    |LUT6        |  1161|
+|14    |MUXF7       |   256|
+|15    |MUXF8       |   128|
+|16    |FDCE        |     1|
+|17    |FDRE        |  1682|
+|18    |FDSE        |     9|
+|19    |IBUF        |     2|
+|20    |OBUF        |     1|
++------+------------+------+
+
+Report Instance Areas: 
++------+-------------------------+----------------------------+------+
+|      |Instance                 |Module                      |Cells |
++------+-------------------------+----------------------------+------+
+|1     |top                      |                            |  4399|
+|2     |  u_mycpu                |mycpu                       |  4392|
+|3     |    bus_sys_custom0      |bus_top                     |   866|
+|4     |      bus_data           |bus_cpu_bram                |   351|
+|5     |      bus_inst           |bus_cpu_bram_0              |   115|
+|6     |      bus_sum            |bus_sum_custom              |    83|
+|7     |        bus_arbiter      |bus_arbiter_custom          |    83|
+|8     |      u_bram_kernel_code |bram_kernel_code            |    36|
+|9     |      u_bram_kernel_data |bram_kernel_data            |    36|
+|10    |      u_bram_user_code   |bram_user_code              |    36|
+|11    |      u_bram_user_data   |bram_user_data              |    36|
+|12    |      uart_sum0          |uart_sum                    |   173|
+|13    |        ext_uart_r       |async_receiver              |    76|
+|14    |          tickgen        |BaudTickGen__parameterized0 |    41|
+|15    |        ext_uart_t       |async_transmitter           |    59|
+|16    |          tickgen        |BaudTickGen                 |    37|
+|17    |        uart_ctrl0       |uart_ctrl                   |    38|
+|18    |    u_exemem             |exemem                      |   224|
+|19    |    u_idexe              |idexe                       |   742|
+|20    |    u_ifid               |ifid                        |   404|
+|21    |    u_memwb              |memwb                       |   137|
+|22    |    u_regfile            |regfile                     |  1889|
+|23    |    u_stage_exe          |stage_exe                   |    22|
+|24    |    u_stage_if           |stage_if                    |   107|
+|25    |    u_stall              |stall                       |     1|
++------+-------------------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:13 ; elapsed = 00:01:14 . Memory (MB): peak = 1369.195 ; gain = 612.633
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 90 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 1369.195 ; gain = 488.871
+Synthesis Optimization Complete : Time (s): cpu = 00:01:13 ; elapsed = 00:01:14 . Memory (MB): peak = 1369.195 ; gain = 612.633
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 1381.109 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 457 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1381.109 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+189 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:20 ; elapsed = 00:01:22 . Memory (MB): peak = 1381.109 ; gain = 911.262
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1381.109 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/my_cpu/_Build_CPU/xpr_monitor/project_1.runs/synth_1/thinpad_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file thinpad_top_utilization_synth.rpt -pb thinpad_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 17 15:49:08 2022...

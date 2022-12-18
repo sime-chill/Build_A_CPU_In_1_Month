@@ -1,0 +1,50 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sat Dec 17 15:50:49 2022
+| Host         : DESKTOP-NanGuo running 64-bit major release  (build 9200)
+| Command      : report_methodology -file thinpad_top_methodology_drc_routed.rpt -pb thinpad_top_methodology_drc_routed.pb -rpx thinpad_top_methodology_drc_routed.rpx
+| Design       : thinpad_top
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 3
++----------+----------+-----------------+------------+
+| Rule     | Severity | Description     | Violations |
++----------+----------+-----------------+------------+
+| SYNTH-10 | Warning  | Wide multiplier | 3          |
++----------+----------+-----------------+------------+
+
+2. REPORT DETAILS
+-----------------
+SYNTH-10#1 Warning
+Wide multiplier  
+Detected multiplier at u_mycpu/u_stage_exe/artres1 of size 16x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#2 Warning
+Wide multiplier  
+Detected multiplier at u_mycpu/u_stage_exe/artres1__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#3 Warning
+Wide multiplier  
+Detected multiplier at u_mycpu/u_stage_exe/artres1__1 of size 18x16, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+

@@ -1,0 +1,129 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sat Dec 17 15:50:03 2022
+| Host         : DESKTOP-NanGuo running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file thinpad_top_control_sets_placed.rpt
+| Design       : thinpad_top
+| Device       : xc7a100t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    51 |
+|    Minimum number of control sets                        |    51 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    55 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    51 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     4 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    43 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              36 |           13 |
+| No           | No                    | Yes                    |               1 |            1 |
+| No           | Yes                   | No                     |              62 |           22 |
+| Yes          | No                    | No                     |             103 |           39 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1495 |          587 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------+-------------------------------------------------------------------------------------+---------------------------------------------------------+------------------+----------------+
+|       Clock Signal       |                                    Enable Signal                                    |                     Set/Reset Signal                    | Slice Load Count | Bel Load Count |
++--------------------------+-------------------------------------------------------------------------------------+---------------------------------------------------------+------------------+----------------+
+|  clock_gen/inst/clk_out1 |                                                                                     | rst_i_1_n_0                                             |                1 |              1 |
+|  clock_gen/inst/clk_out1 | u_mycpu/bus_sys_custom0/uart_sum0/ext_uart_r/tickgen/OversamplingTick               |                                                         |                1 |              1 |
+|  clock_gen/inst/clk_out1 | u_mycpu/bus_sys_custom0/uart_sum0/ext_uart_t/tickgen/Acc_reg[21]_0[0]               |                                                         |                2 |              8 |
+|  clock_gen/inst/clk_out1 |                                                                                     | u_mycpu/bus_sys_custom0/bus_sum/bus_arbiter/SR[0]       |                2 |              8 |
+|  clock_gen/inst/clk_out1 | u_mycpu/bus_sys_custom0/uart_sum0/ext_uart_r/E[0]                                   | u_mycpu/u_regfile/p_0_in                                |                1 |              8 |
+|  clock_gen/inst/clk_out1 | u_mycpu/bus_sys_custom0/uart_sum0/ext_uart_r/tickgen/FSM_onehot_RxD_state_reg[4][0] |                                                         |                1 |              8 |
+|  clock_gen/inst/clk_out1 | u_mycpu/bus_sys_custom0/uart_sum0/ext_uart_r/tickgen/FSM_onehot_RxD_state_reg[1][0] |                                                         |                2 |             11 |
+|  clock_gen/inst/clk_out1 | u_mycpu/bus_sys_custom0/uart_sum0/ext_uart_t/tickgen/E[0]                           |                                                         |                2 |             11 |
+|  clock_gen/inst/clk_out1 |                                                                                     | u_mycpu/bus_sys_custom0/uart_sum0/ext_uart_t/Q[0]       |                7 |             22 |
+|  clock_gen/inst/clk_out1 |                                                                                     | u_mycpu/u_regfile/p_0_in                                |               13 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_stall/stop[0]                                                             | u_mycpu/u_stage_if/if_o_pc[31]_i_1_n_0                  |               14 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/bus_sys_custom0/bus_inst/rd_buf[31]_i_1__0_n_0                              |                                                         |                9 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/bus_sys_custom0/bus_data/rd_buf[31]_i_1_n_0                                 |                                                         |               22 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_memwb/wb_i_rfwe_reg_0[0]                                                  | u_mycpu/u_regfile/p_0_in                                |               11 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_memwb/wb_i_rfwe_reg_29[0]                                                 | u_mycpu/u_regfile/p_0_in                                |               19 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_memwb/wb_i_rfwe_reg_26[0]                                                 | u_mycpu/u_regfile/p_0_in                                |               16 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_memwb/wb_i_rfwe_reg_5[0]                                                  | u_mycpu/u_regfile/p_0_in                                |               19 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_memwb/wb_i_rfwe_reg_8[0]                                                  | u_mycpu/u_regfile/p_0_in                                |               22 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_memwb/wb_i_rfwe_reg_12[0]                                                 | u_mycpu/u_regfile/p_0_in                                |               10 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_memwb/wb_i_rfwe_reg_17[0]                                                 | u_mycpu/u_regfile/p_0_in                                |                8 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_memwb/wb_i_rfwe_reg_28[0]                                                 | u_mycpu/u_regfile/p_0_in                                |               21 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_memwb/wb_i_rfwe_reg_24[0]                                                 | u_mycpu/u_regfile/p_0_in                                |               13 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_memwb/wb_i_rfwe_reg_6[0]                                                  | u_mycpu/u_regfile/p_0_in                                |               14 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_memwb/wb_i_rfwe_reg_10[0]                                                 | u_mycpu/u_regfile/p_0_in                                |                7 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_memwb/wb_i_rfwe_reg_30[0]                                                 | u_mycpu/u_regfile/p_0_in                                |               21 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_memwb/wb_i_rfwe_reg_4[0]                                                  | u_mycpu/u_regfile/p_0_in                                |               11 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_memwb/wb_i_rfwe_reg_7[0]                                                  | u_mycpu/u_regfile/p_0_in                                |               22 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_memwb/wb_i_rfwe_reg_3[0]                                                  | u_mycpu/u_regfile/p_0_in                                |               15 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_memwb/wb_i_rfwe_reg_9[0]                                                  | u_mycpu/u_regfile/p_0_in                                |                8 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_memwb/wb_i_rfwe_reg_20[0]                                                 | u_mycpu/u_regfile/p_0_in                                |                8 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_memwb/wb_i_rfwe_reg_15[0]                                                 | u_mycpu/u_regfile/p_0_in                                |               10 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_memwb/wb_i_rfwe_reg_22[0]                                                 | u_mycpu/u_regfile/p_0_in                                |               10 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_memwb/wb_i_rfwe_reg_11[0]                                                 | u_mycpu/u_regfile/p_0_in                                |               13 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_memwb/wb_i_rfwe_reg_27[0]                                                 | u_mycpu/u_regfile/p_0_in                                |               16 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_memwb/wb_i_rfwe_reg_16[0]                                                 | u_mycpu/u_regfile/p_0_in                                |                9 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_memwb/wb_i_rfwe_reg_21[0]                                                 | u_mycpu/u_regfile/p_0_in                                |               12 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_memwb/wb_i_rfwe_reg_14[0]                                                 | u_mycpu/u_regfile/p_0_in                                |               11 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_memwb/wb_i_rfwe_reg_18[0]                                                 | u_mycpu/u_regfile/p_0_in                                |               15 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_memwb/wb_i_rfwe_reg_19[0]                                                 | u_mycpu/u_regfile/p_0_in                                |               13 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_memwb/wb_i_rfwe_reg_23[0]                                                 | u_mycpu/u_regfile/p_0_in                                |               15 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_memwb/wb_i_rfwe_reg_1[0]                                                  | u_mycpu/u_regfile/p_0_in                                |               15 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_memwb/wb_i_rfwe_reg_25[0]                                                 | u_mycpu/u_regfile/p_0_in                                |               10 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_memwb/wb_i_rfwe_reg_13[0]                                                 | u_mycpu/u_regfile/p_0_in                                |               11 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_memwb/wb_i_rfwe_reg_2[0]                                                  | u_mycpu/u_regfile/p_0_in                                |               14 |             32 |
+|  clock_gen/inst/clk_out1 | u_mycpu/bus_sys_custom0/bus_inst/bus_addr[31]_i_1_n_0                               | u_mycpu/u_regfile/p_0_in                                |                9 |             33 |
+|  clock_gen/inst/clk_out1 |                                                                                     |                                                         |               13 |             36 |
+|  clock_gen/inst/clk_out1 | u_mycpu/bus_sys_custom0/bus_data/E[0]                                               | u_mycpu/bus_sys_custom0/bus_data/SR[0]                  |               15 |             38 |
+|  clock_gen/inst/clk_out1 | u_mycpu/bus_sys_custom0/bus_data/bus_addr[31]_i_1__0_n_0                            | u_mycpu/u_regfile/p_0_in                                |               22 |             69 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_stall/stop[0]                                                             | u_mycpu/u_regfile/p_0_in                                |               26 |             75 |
+|  clock_gen/inst/clk_out1 | u_mycpu/bus_sys_custom0/bus_data/E[0]                                               | u_mycpu/u_regfile/p_0_in                                |               34 |            105 |
+|  clock_gen/inst/clk_out1 | u_mycpu/u_stall/stop[0]                                                             | u_mycpu/bus_sys_custom0/bus_data/mem_i_memop_reg[op][2] |               47 |            143 |
++--------------------------+-------------------------------------------------------------------------------------+---------------------------------------------------------+------------------+----------------+
+
+

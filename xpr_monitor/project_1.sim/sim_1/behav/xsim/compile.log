@@ -1,0 +1,57 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_Sun_example/code/async.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module async_transmitter
+INFO: [VRFC 10-311] analyzing module async_receiver
+INFO: [VRFC 10-311] analyzing module BaudTickGen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_Sun_example/code/bram_kernel_code.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram_kernel_code
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_Sun_example/code/bram_kernel_data.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram_kernel_data
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_Sun_example/code/bram_user_code.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram_user_code
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_Sun_example/code/bram_user_data.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram_user_data
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_Sun_example/code/bus_addr_dec_custom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bus_addr_dec_custom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_Sun_example/code/bus_arbiter_custom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bus_arbiter_custom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_Sun_example/code/bus_cpu_bram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bus_cpu_bram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_Sun_example/code/bus_mux_custom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bus_mux_custom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_Sun_example/code/bus_slave_mux_custom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bus_slave_mux_custom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_Sun_example/code/bus_sum_custom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bus_sum_custom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_Sun_example/code/bus_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bus_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_Sun_example/code/define.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_Sun_example/code/mips_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mycpu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_Sun_example/code/reg_exemem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exemem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_Sun_example/code/reg_idexe.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module idexe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_Sun_example/code/reg_ifid.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ifid
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_Sun_example/code/reg_memwb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memwb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_Sun_example/code/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_Sun_example/code/stage_exe.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_exe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_Sun_example/code/stage_id.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_id
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_Sun_example/code/stage_if.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_if
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_Sun_example/code/stage_mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_Sun_example/code/stall.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stall
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_Sun_example/code/thinpad_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module thinpad_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_Sun_example/code/uart_ctrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_Sun_example/code/uart_sum.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_sum
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/_Sun_example/simu/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top

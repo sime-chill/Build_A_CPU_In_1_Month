@@ -1,0 +1,89 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.simu_top.u_mycpu.bus_sys_custom0.u_bram_kernel_code.u_kernel_code.inst.native_mem_mapped_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top.simu_top.u_mycpu.bus_sys_custom0.u_bram_user_code.u_user_code.inst.native_mem_mapped_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top.simu_top.u_mycpu.bus_sys_custom0.u_bram_user_data.u_user_data.inst.native_mem_mapped_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_top.simu_top.u_mycpu.bus_sys_custom0.u_bram_kernel_data.u_kernel_data.inst.native_mem_mapped_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+==============================================================
+Test begin!
+        [  10000 ns] Test is running, debug_wb_pc = 0x80001af8
+        [  20000 ns] Test is running, debug_wb_pc = 0x80006ea8
+        [  30000 ns] Test is running, debug_wb_pc = 0x80008f2c
+        [  40000 ns] Test is running, debug_wb_pc = 0x80009120
+        [  50000 ns] Test is running, debug_wb_pc = 0x8000930c
+        [  60000 ns] Test is running, debug_wb_pc = 0x800094f8
+        [  70000 ns] Test is running, debug_wb_pc = 0x800096e4
+        [  80000 ns] Test is running, debug_wb_pc = 0x800098d8
+        [  90000 ns] Test is running, debug_wb_pc = 0x80009ac4
+        [ 100000 ns] Test is running, debug_wb_pc = 0x80009cb0
+        [ 110000 ns] Test is running, debug_wb_pc = 0x80009ea4
+        [ 120000 ns] Test is running, debug_wb_pc = 0x8000a090
+        [ 130000 ns] Test is running, debug_wb_pc = 0x800002c8
+        [ 140000 ns] Test is running, debug_wb_pc = 0x800004b4
+        [ 150000 ns] Test is running, debug_wb_pc = 0x800006a8
+        [ 160000 ns] Test is running, debug_wb_pc = 0x80000894
+        [ 170000 ns] Test is running, debug_wb_pc = 0x80000a80
+        [ 180000 ns] Test is running, debug_wb_pc = 0x80000c6c
+        [ 190000 ns] Test is running, debug_wb_pc = 0x80000e60
+        [ 200000 ns] Test is running, debug_wb_pc = 0x8000104c
+        [ 210000 ns] Test is running, debug_wb_pc = 0x80001238
+        [ 220000 ns] Test is running, debug_wb_pc = 0x80001424
+        [ 230000 ns] Test is running, debug_wb_pc = 0x80001610
+        [ 240000 ns] Test is running, debug_wb_pc = 0x800017fc
+        [ 250000 ns] Test is running, debug_wb_pc = 0x80001cbc
+        [ 260000 ns] Test is running, debug_wb_pc = 0x80001ed0
+        [ 270000 ns] Test is running, debug_wb_pc = 0x800021dc
+        [ 280000 ns] Test is running, debug_wb_pc = 0x800024e8
+        [ 290000 ns] Test is running, debug_wb_pc = 0x800027b4
+        [ 300000 ns] Test is running, debug_wb_pc = 0x80002a3c
+        [ 310000 ns] Test is running, debug_wb_pc = 0x80002c74
+        [ 320000 ns] Test is running, debug_wb_pc = 0x80002f10
+        [ 330000 ns] Test is running, debug_wb_pc = 0x800031bc
+        [ 340000 ns] Test is running, debug_wb_pc = 0x8000348c
+        [ 350000 ns] Test is running, debug_wb_pc = 0x8000374c
+        [ 360000 ns] Test is running, debug_wb_pc = 0x80003a14
+        [ 370000 ns] Test is running, debug_wb_pc = 0x80003ca8
+        [ 380000 ns] Test is running, debug_wb_pc = 0x80003f58
+        [ 390000 ns] Test is running, debug_wb_pc = 0x80004204
+        [ 400000 ns] Test is running, debug_wb_pc = 0x800044f0
+        [ 410000 ns] Test is running, debug_wb_pc = 0x800047f8
+        [ 420000 ns] Test is running, debug_wb_pc = 0x80004a70
+        [ 430000 ns] Test is running, debug_wb_pc = 0x80004d04
+        [ 440000 ns] Test is running, debug_wb_pc = 0x80004fa0
+        [ 450000 ns] Test is running, debug_wb_pc = 0x800051e4
+        [ 460000 ns] Test is running, debug_wb_pc = 0x80005484
+        [ 470000 ns] Test is running, debug_wb_pc = 0x80005704
+        [ 480000 ns] Test is running, debug_wb_pc = 0x80005988
+        [ 490000 ns] Test is running, debug_wb_pc = 0x80005bc8
+        [ 500000 ns] Test is running, debug_wb_pc = 0x80005e40
+        [ 510000 ns] Test is running, debug_wb_pc = 0x80006088
+        [ 520000 ns] Test is running, debug_wb_pc = 0x80006300
+        [ 530000 ns] Test is running, debug_wb_pc = 0x80006568
+        [ 540000 ns] Test is running, debug_wb_pc = 0x800067b0
+        [ 550000 ns] Test is running, debug_wb_pc = 0x80006a3c
+        [ 560000 ns] Test is running, debug_wb_pc = 0x80006ca8
+        [ 570000 ns] Test is running, debug_wb_pc = 0x8000711c
+        [ 580000 ns] Test is running, debug_wb_pc = 0x80007358
+        [ 590000 ns] Test is running, debug_wb_pc = 0x80007598
+        [ 600000 ns] Test is running, debug_wb_pc = 0x800077b0
+        [ 610000 ns] Test is running, debug_wb_pc = 0x800079d4
+        [ 620000 ns] Test is running, debug_wb_pc = 0x80007c08
+        [ 630000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 640000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 650000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 660000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 670000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 680000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 690000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 700000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 710000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 720000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 730000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 740000 ns] Test is running, debug_wb_pc = 0x00000000
+        [ 750000 ns] Test is running, debug_wb_pc = 0x00000000
+==============================================================
+Test end!
+----PASS!!!
+$finish called at time : 756385 ns : File "D:/_Sun_example/simu/tb.sv" Line 160

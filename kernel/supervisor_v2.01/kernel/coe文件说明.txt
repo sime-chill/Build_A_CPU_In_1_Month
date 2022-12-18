@@ -1,0 +1,2 @@
+kernel_simu.coe是修改了串口函数的程序，可用于仿真
+kernel_mod.coe修改了test.S程序，去除了会超出bram范围的测试段代码，去除UTEST_CRYPTONIGHT，将UTEST_STREAM 中循环次数改小

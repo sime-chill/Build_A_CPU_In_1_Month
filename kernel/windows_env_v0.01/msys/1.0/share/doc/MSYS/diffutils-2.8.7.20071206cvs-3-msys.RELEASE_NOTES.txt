@@ -1,0 +1,115 @@
+msys diffutils
+========================================================================
+Diffutils provides a group of utilities that displays difference between
+and among text files. 'diff' outputs the difference between two files in
+any of several formats. If the files are identical, it normally produces
+no ouput; if they are binary (non-text) it normally reports only that
+they are different. 'cmp' shows the offsets and files numbers where two
+files differ; it can also show, side by side, all the characters that
+differ between the two files. 'sdiff' merges two files interactively.
+'diff3' shows differences among three files. If two people have made
+independent changes to a common original, diff3 reports that difference
+between the original and the two changed versions, and can produce a
+merged file that contains both persons' changes along with warnings
+about conflicts. 
+
+This version has been modified and compiled for use in the MSYS
+environment. It should be installed into the / == /usr directory, which
+is usually but not always, C:\msys\1.0.
+
+Runtime requirements:
+  msysCORE-1.0.13-2-msys-1.0.13-bin
+  libintl-0.17-2-msys-1.0.13-dll-8
+  libiconv-1.13.1-2-msys-dll-2
+
+Build requirements (these, or newer)
+  MSYS toolchain
+    binutils-2.19.51-3-msys-1.0.13-bin
+    gcc-3.4.4-3-msys-1.0.13-bin
+    w32api-3.14-3-msys-1.0.12-dev
+    msysCORE-1.0.13-2-msys-1.0.13-dev
+
+  Devel Tools and Dependent Libraries 
+    autoconf-2.65-1-msys-1.0.13-bin
+    automake-1.11.1-1-msys-1.0.13-bin
+    libiconv-1.13.1-2-msys-1.0.13-bin
+    libiconv-1.13.1-2-msys-1.0.13-dev
+    gettext-0.17-2-msys-1.0.13-bin
+    gettext-0.17-2-msys-1.0.13-dev
+    libgettextpo-0.17-2-msys-1.0.13-dll-0
+
+  MSYS Environment
+    perl-5.6.1_2-2-msys-1.0.13-bin
+    libcrypt-1.1_1-3-msys-1.0.13-dll-0
+    libgdbm-1.8.3-3-msys-1.0.13-dll-3
+    zlib-1.2.3-2-msys-1.0.13-dll
+    coreutils-5.97-2-msys-1.0.11-bin
+    make-3.81-2-msys-1.0.11-bin
+    bash-3.1.17-2-msys-1.0.11-bin
+    tar-1.23-2-msys-1.0.13-bin
+    xz-4.999.9beta_20100401-1-msys-1.0.13-bin
+    liblzma-4.999.9beta_20100401-1-msys-1.0.13-dll-1
+    file-5.04-2-msys-1.0.13-bin
+    grep-2.5.4-2-msys-1.0.13-bin
+    sed-4.2.1-2-msys-1.0.13-bin
+    gawk-3.1.7-2-msys-1.0.13-bin
+    cvs-1.12.13-1-msys-1.0.11-bin
+
+Canonical homepage:
+  http://www.gnu.org/software/diffutils/
+
+Canonical download:
+  http://ftp.gnu.org/pub/gnu/diffutils/
+  cvs -z3 -D 2007-12-06 \
+	-d:pserver:anonymous@cvs.savannah.gnu.org:/sources/diffutils \
+	co diffutils
+
+License:
+  GPLv3
+
+Language:
+  C
+
+========================================================================
+
+Build instructions:
+  unpack diffutils-2.8.7.20071206cvs-3-msys-1.0.13-src.tar.lzma
+  ./msys-build-diffutils diffutils-2.8.7.20071206cvs.tar.bz2
+
+This will create:
+  diffutils-2.8.7.20071206cvs-3-msys-1.0.13-src.tar.lzma
+  diffutils-2.8.7.20071206cvs-3-msys-1.0.13-bin.tar.lzma
+  diffutils-2.8.7.20071206cvs-3-msys-1.0.13-lang.tar.lzma
+  diffutils-2.8.7.20071206cvs-3-msys-1.0.13-doc.tar.lzma
+  diffutils-2.8.7.20071206cvs-3-msys-1.0.13-lic.tar.lzma
+
+========================================================================
+
+Test suite results
+
+This section of this document is updated with each new release.
+No history is maintained here.
+
+No built-in testsuite. Manual testing appears ok.
+
+========================================================================
+
+Port Notes:
+
+----------  diffutils-2.8.7.20071206cvs-3 -- 2010 Apr 21 -----------
+* Rebuild with latest msys-gcc-3.x compiler, against msys 1.0.13
+* Link against DLL version of libintl and libiconv
+* Split i18n files into separate -lang package
+
+----------  diffutils-2.8.7.20071206cvs-2 -- 2009 Aug 14 -----------
+* Fix bug related to MSYS freopen implementation; when comparing
+  a file against stdin, use setmode() instead of freopen.
+
+----------  diffutils-2.8.7.20071206cvs-1 -- 2009 Aug 13 -----------
+* First release of diffutils for msys using new packaging standard.
+* Needed to use CVS because otherwise autoreconf failed. This drove
+  the requirement to pull in the GNULIB changes.  The reason for choosing
+  20071206 instead of HEAD was because that's the CVS version that
+  OpenSUSE is using, and has tested -- no sense in us being the guinea
+  pigs for any additional changes (although there aren't that many commits
+  after that date).
